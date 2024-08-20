@@ -8,20 +8,21 @@ const api={
 
 function App() {
    
-  const [query,setQuery]=useState('Chittagong');
+  const [query,setQuery]=useState('');
   const [weather,setweather]=useState('');
 
   const search =evt=>{
     if (evt.key==="Enter"){
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`).then(res=>res.json())
       .then(result=>{
-        setQuery('');
+        setQuery(''); //its update the query for a new input
         
-        setweather(result)
+        setweather(result) //its set the result in weather for rendering 
       
       console.log(result)})
     }
   }
+
 
 
   const dateBuilder=(d)=>{
