@@ -81,7 +81,7 @@ main{
 }
 .temp{
   color:rgb(251, 250, 251);
-  background-color:rgba(255,255,255,0.2);
+   background-color:rgba(255,255,255,0.2);
   font-size:80px;
   font-weight: 900;
   text-align: center;
@@ -89,6 +89,9 @@ main{
   margin:30px auto;
   padding:15px;
   border-radius: 35px;
+  margin-left: 20%;
+  margin-right:20%
+  
 }
 
 .weater-box{

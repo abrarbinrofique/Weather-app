@@ -8,7 +8,7 @@ const api={
 
 function App() {
    
-  const [query,setQuery]=useState('');
+  const [query,setQuery]=useState('Chittagong');
   const [weather,setweather]=useState('');
 
   const search =evt=>{
